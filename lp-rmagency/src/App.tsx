@@ -1,23 +1,30 @@
-import './App.css'
-import { AboutSection } from './components/sections/AboutSection'
-import { AnswersSection } from './components/sections/AnswersSection'
-import { Footer } from './components/sections/Footer'
-import { HeroSection } from './components/sections/HeroSection'
-import { ProjectsSection } from './components/sections/ProjectsSection'
-import { ReviewsSection } from './components/sections/ReviewsSection'
-import { ServicesSection } from './components/sections/ServicesSection'
+import { Footer } from './components/layout/Footer/Footer'
+import { Navbar } from './components/layout/Navbar/Navbar'
+import { AboutSection } from './components/sections/About/AboutSection'
+import { CTASection } from './components/sections/CTA/CTASection'
+import { FAQSection } from './components/sections/FAQ/FAQSection'
+import { HeroSection } from './components/sections/Hero/HeroSection'
+import { ProcessSection } from './components/sections/Process/ProcessSection'
+import { ShowcaseSection } from './components/sections/Showcase/ShowcaseSection'
+import { SolutionsSection } from './components/sections/Solutions/SolutionsSection'
+import { TestimonialsSection } from './components/sections/Testimonials/TestimonialsSection'
 
 function App() {
   return (
-    <main className="page-shell">
-      <HeroSection />
-      <ProjectsSection />
-      <AboutSection />
-      <ServicesSection />
-      <ReviewsSection />
-      <AnswersSection />
+    <div className="min-h-screen bg-[#050505] text-white">
+      <Navbar />
+      <main>
+        <HeroSection />
+        <ShowcaseSection />
+        <AboutSection />
+        <ProcessSection />
+        <SolutionsSection />
+        <TestimonialsSection />
+        <FAQSection />
+        <CTASection />
+      </main>
       <Footer />
-    </main>
+    </div>
   )
 }
 
