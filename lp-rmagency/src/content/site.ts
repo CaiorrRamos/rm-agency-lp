@@ -1,4 +1,4 @@
-import aboutImage from '../assets/logo-rm-cristal.png'
+import aboutImage from '../assets/logo-rm-wh-green.png'
 import heroVideo from '../assets/bg-video.mp4'
 import processImage from '../assets/Background-process.png'
 import showcaseBrand from '../assets/em breve-case.png'
