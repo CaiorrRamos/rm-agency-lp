@@ -26,6 +26,12 @@ export type AboutStat = {
   value: string
 }
 
+export type AboutFounder = {
+  name: string
+  role: string
+  image: string
+}
+
 export type ProcessStep = {
   id: string
   step: string

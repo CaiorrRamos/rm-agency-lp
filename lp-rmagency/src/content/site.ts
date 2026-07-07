@@ -8,6 +8,7 @@ import avatarCaio from '../assets/imagem-caio.png'
 import avatarJohn from '../assets/imagem-john.png'
 import avatarJuan from '../assets/imagem-juan.png'
 import type {
+  AboutFounder,
   AboutStat,
   CTAContent,
   FAQItem,
@@ -128,6 +129,23 @@ export const aboutContent = {
     { label: 'Experiencia', value: '15+' },
   ] satisfies AboutStat[],
   image: aboutImage,
+  founders: [
+    {
+      name: 'Caio',
+      role: 'CEO & Founder',
+      image: avatarCaio,
+    },
+    {
+      name: 'John',
+      role: 'CTO & Diretor de Design',
+      image: avatarJohn,
+    },
+    {
+      name: 'Juan',
+      role: 'COO & Video Director',
+      image: avatarJuan,
+    },
+  ] satisfies AboutFounder[],
 }
 
 export const processContent: { eyebrow: string; title: string; description: string; image: string; steps: ProcessStep[] } = {
