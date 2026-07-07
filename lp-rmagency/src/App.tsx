@@ -1,7 +1,6 @@
 import { Footer } from './components/layout/Footer/Footer'
 import { Navbar } from './components/layout/Navbar/Navbar'
 import { AboutSection } from './components/sections/About/AboutSection'
-import { CTASection } from './components/sections/CTA/CTASection'
 import { FAQSection } from './components/sections/FAQ/FAQSection'
 import { HeroSection } from './components/sections/Hero/HeroSection'
 import { ProcessSection } from './components/sections/Process/ProcessSection'
@@ -21,7 +20,6 @@ function App() {
         <SolutionsSection />
         <TestimonialsSection />
         <FAQSection />
-        <CTASection />
       </main>
       <Footer />
     </div>

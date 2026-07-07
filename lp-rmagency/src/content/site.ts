@@ -23,6 +23,9 @@ import type {
   Testimonial,
 } from '../types/content'
 
+export const budgetWhatsappLink =
+  'https://wa.me/5581973344954?text=Ol%C3%A1!%20Gostaria%20de%20Solicitar%20um%20Or%C3%A7amento%20Gratuito!'
+
 export const navItems: NavItem[] = [
   { label: 'Projetos', href: '#showcase' },
   { label: 'Conheca a RM', href: '#about' },
@@ -288,5 +291,5 @@ export const ctaContent: CTAContent = {
   title: 'O proximo passo da sua empresa pode comecar hoje.',
   subtitle:
     'Se a marca precisa parecer mais solida e vender com mais clareza, a proxima conversa ja deve ser sobre execucao.',
-  primaryCta: { label: 'Solicitar orcamento', href: 'mailto:hello@rmagency.com' },
+  primaryCta: { label: 'Solicitar orcamento', href: budgetWhatsappLink },
 }
