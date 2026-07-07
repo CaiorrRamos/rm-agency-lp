@@ -7,6 +7,9 @@ import showcaseHat from '../assets/mockup-suzana-rio.png'
 import avatarCaio from '../assets/imagem-caio.png'
 import avatarJohn from '../assets/imagem-john.png'
 import avatarJuan from '../assets/imagem-juan.png'
+import reviewJuliana from '../assets/review-juliana.jpeg'
+import reviewMatheus from '../assets/review-matheus.jpeg'
+import reviewRicardo from '../assets/review-ricardo.jpeg'
 import type {
   AboutFounder,
   AboutStat,
@@ -224,7 +227,7 @@ export const testimonialsContent: { eyebrow: string; title: string; description:
       role: 'CEO, consultoria',
       quote:
         'A nova apresentacao da marca ficou mais premium e a landing passou a conduzir melhor o usuario para contato.',
-      avatar: avatarCaio,
+      avatar: reviewRicardo,
       rating: 5,
     },
     {
@@ -233,7 +236,7 @@ export const testimonialsContent: { eyebrow: string; title: string; description:
       role: 'Fundadora, wellness brand',
       quote:
         'O processo foi rapido, claro e muito mais estrategico do que um layout bonito isolado.',
-      avatar: avatarJohn,
+      avatar: reviewJuliana,
       rating: 5,
     },
     {
@@ -242,7 +245,7 @@ export const testimonialsContent: { eyebrow: string; title: string; description:
       role: 'Diretor comercial',
       quote:
         'A pagina ganhou linguagem mais sofisticada e uma hierarquia que valorizou melhor a oferta.',
-      avatar: avatarJuan,
+      avatar: reviewMatheus,
       rating: 5,
     },
   ],
