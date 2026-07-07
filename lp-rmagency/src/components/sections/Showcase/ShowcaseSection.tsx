@@ -1,43 +1,127 @@
+import { motion } from 'framer-motion'
 import { showcaseItems } from '../../../content/site'
 import { Container } from '../../ui/Container/Container'
-import { RevealSection } from '../../ui/Section/RevealSection'
-import { SectionHeader } from '../../ui/Section/SectionHeader'
+import { smoothTransition, staggerContainer } from '../../../utils/animations'
 import { ShowcaseCard } from './ShowcaseCard'
+import { ShowcaseChromaGrid } from './ShowcaseChromaGrid'
+
+const columnVariants = staggerContainer(0.12, 0.18)
+
+const cardDrop = {
+  hidden: {
+    opacity: 0,
+    y: -72,
+    scale: 0.985,
+  },
+  show: {
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    transition: smoothTransition(0.9),
+  },
+}
+
+const featuredCardDrop = {
+  hidden: {
+    opacity: 0,
+    y: -92,
+    scale: 0.975,
+  },
+  show: {
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    transition: smoothTransition(1),
+  },
+}
 
 export function ShowcaseSection() {
-  const [leftTop, centerTop, rightTop, leftMid, centerMid, rightMid, leftBottom, centerBottom, rightBottom] =
+  const [leftTop, brandRm, rightTop, leftMid, featuredHat, rightMid, leftBottom, featuredDidi, rightBottom] =
     showcaseItems
 
   return (
-    <RevealSection id="showcase">
-      <Container>
-        <SectionHeader
-          eyebrow="Portfolio / Showcase"
-          title="Cases, conceitos e espacos pensados para prova visual."
-          description="A vitrine principal deve mostrar contraste entre placeholders estrategicos e cases que ja conseguem vender repertorio."
-          align="center"
-        />
+    <motion.section
+      id="showcase"
+      className="relative isolate overflow-hidden bg-black pt-[108px] pb-[112px] md:pt-[124px] md:pb-[140px]"
+      initial="hidden"
+      animate="show"
+    >
+      <Container className="relative z-10 mx-auto w-full max-w-[1580px] px-4 sm:px-5 lg:px-6 xl:px-8">
+        <ShowcaseChromaGrid
+          className="mx-auto w-full max-w-[1520px]"
+          radius={360}
+          damping={0.38}
+          fadeOut={0.5}
+        >
+          <motion.div
+            className="flex w-full flex-col gap-2 md:grid md:grid-cols-[0.94fr_1.14fr_0.94fr] md:items-start md:gap-2 lg:gap-2.5 xl:gap-3"
+            variants={staggerContainer(0.08, 0.14)}
+          >
+            <motion.div
+              className="flex flex-col gap-2 md:pt-[82px] lg:pt-[88px] xl:pt-[96px]"
+              variants={columnVariants}
+            >
+              <ShowcaseCard
+                item={leftTop}
+                className="md:min-h-[42svh] lg:min-h-[44svh] xl:min-h-[45svh]"
+                variants={cardDrop}
+              />
+              <ShowcaseCard
+                item={leftMid}
+                className="md:min-h-[42svh] lg:min-h-[44svh] xl:min-h-[45svh]"
+                variants={cardDrop}
+              />
+              <ShowcaseCard
+                item={leftBottom}
+                className="md:min-h-[42svh] lg:min-h-[44svh] xl:min-h-[45svh]"
+                variants={cardDrop}
+              />
+            </motion.div>
 
-        <div className="grid gap-4 lg:grid-cols-[1fr_1.15fr_1fr]">
-          <div className="grid gap-4">
-            <ShowcaseCard item={leftTop} />
-            <ShowcaseCard item={leftMid} />
-            <ShowcaseCard item={leftBottom} />
-          </div>
+            <motion.div className="flex flex-col gap-2" variants={columnVariants}>
+              <ShowcaseCard
+                item={brandRm}
+                featured
+                className="md:min-h-[49svh] lg:min-h-[52svh] xl:min-h-[54svh]"
+                variants={featuredCardDrop}
+              />
+              <ShowcaseCard
+                item={featuredHat}
+                featured
+                className="md:min-h-[49svh] lg:min-h-[52svh] xl:min-h-[54svh]"
+                variants={featuredCardDrop}
+              />
+              <ShowcaseCard
+                item={featuredDidi}
+                featured
+                className="md:min-h-[49svh] lg:min-h-[52svh] xl:min-h-[54svh]"
+                variants={featuredCardDrop}
+              />
+            </motion.div>
 
-          <div className="grid gap-4">
-            <ShowcaseCard item={centerTop} featured />
-            <ShowcaseCard item={centerMid} featured />
-            <ShowcaseCard item={centerBottom} featured />
-          </div>
-
-          <div className="grid gap-4">
-            <ShowcaseCard item={rightTop} />
-            <ShowcaseCard item={rightMid} />
-            <ShowcaseCard item={rightBottom} />
-          </div>
-        </div>
+            <motion.div
+              className="flex flex-col gap-2 md:pt-[82px] lg:pt-[88px] xl:pt-[96px]"
+              variants={columnVariants}
+            >
+              <ShowcaseCard
+                item={rightTop}
+                className="md:min-h-[42svh] lg:min-h-[44svh] xl:min-h-[45svh]"
+                variants={cardDrop}
+              />
+              <ShowcaseCard
+                item={rightMid}
+                className="md:min-h-[42svh] lg:min-h-[44svh] xl:min-h-[45svh]"
+                variants={cardDrop}
+              />
+              <ShowcaseCard
+                item={rightBottom}
+                className="md:min-h-[42svh] lg:min-h-[44svh] xl:min-h-[45svh]"
+                variants={cardDrop}
+              />
+            </motion.div>
+          </motion.div>
+        </ShowcaseChromaGrid>
       </Container>
-    </RevealSection>
+    </motion.section>
   )
 }

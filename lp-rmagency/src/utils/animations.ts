@@ -62,6 +62,44 @@ export const staggerContainer = (
   },
 })
 
+export const sectionReveal: Variants = {
+  hidden: {
+    opacity: 0,
+    y: 28,
+    filter: 'blur(8px)',
+  },
+  show: {
+    opacity: 1,
+    y: 0,
+    filter: 'blur(0px)',
+    transition: smoothTransition(0.8, 0.1),
+  },
+}
+
+export const projectCardReveal: Variants = {
+  hidden: {
+    opacity: 0,
+    y: 40,
+    scale: 0.96,
+    filter: 'blur(8px)',
+  },
+  show: {
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    filter: 'blur(0px)',
+    transition: smoothTransition(0.8),
+  },
+}
+
+export const imageHover: TargetAndTransition = {
+  scale: 1.05,
+  transition: {
+    duration: 0.7,
+    ease: smoothEase,
+  },
+}
+
 export const cardHover: TargetAndTransition = {
   y: -4,
   scale: 1.04,

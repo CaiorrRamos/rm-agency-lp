@@ -19,7 +19,7 @@
 :root {
   font-family: 'General Sans', sans-serif;
   color: rgba(255, 255, 255, 0.92);
-  background: #050505;
+  background: #000000;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -33,9 +33,7 @@ html {
 body {
   margin: 0;
   min-width: 320px;
-  background:
-    radial-gradient(circle at top, rgba(178, 248, 40, 0.06), transparent 28%),
-    #050505;
+  background: #000000;
 }
 
 * {
