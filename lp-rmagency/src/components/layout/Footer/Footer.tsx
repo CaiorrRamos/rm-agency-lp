@@ -22,25 +22,25 @@ export function Footer() {
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(178,248,40,0.16),transparent_22%),linear-gradient(180deg,rgba(0,0,0,0.7),rgba(0,0,0,0.76)_24%,rgba(0,0,0,0.84)_58%,rgba(0,0,0,0.93))]" />
       <div className="pointer-events-none absolute inset-0 bg-black/30" />
 
-      <Container className="relative z-10 flex min-h-[92svh] flex-col justify-between px-6 py-10 md:px-8 md:py-12 lg:px-10">
+      <Container className="relative z-10 flex min-h-[82svh] flex-col justify-between px-4 py-8 sm:px-6 sm:py-10 md:min-h-[92svh] md:px-8 md:py-12 lg:px-10">
         <div className="flex min-h-[14svh] flex-1 items-center justify-center">
           <div className="mx-auto flex w-full max-w-[760px] flex-col items-center text-center">
             <span className="inline-flex rounded-full border border-white/16 bg-white/[0.08] px-4 py-2 text-sm text-white/84 backdrop-blur-xl shadow-[inset_0_1px_0_rgba(255,255,255,0.16),0_8px_28px_rgba(0,0,0,0.24)]">
               {ctaContent.eyebrow}
             </span>
 
-            <h2 className="mt-8 max-w-[11.5ch] text-balance text-[2.7rem] font-semibold leading-[0.92] tracking-tight text-white md:text-6xl lg:text-[4.4rem]">
+            <h2 className="mt-6 max-w-[11.5ch] text-balance text-[2.45rem] font-semibold leading-[0.92] tracking-tight text-white sm:mt-8 sm:text-[2.7rem] md:text-6xl lg:text-[4.4rem]">
               {ctaContent.title}
             </h2>
 
             <Button
               href={budgetWhatsappLink}
-              className="mt-8 px-8 py-3.5 text-base text-white shadow-[inset_0_1px_0_rgba(255,255,255,0.24),0_0_0_1px_rgba(255,255,255,0.12),0_18px_42px_rgba(0,0,0,0.34)]"
+              className="mt-7 w-full max-w-[280px] px-8 py-3.5 text-base text-white shadow-[inset_0_1px_0_rgba(255,255,255,0.24),0_0_0_1px_rgba(255,255,255,0.12),0_18px_42px_rgba(0,0,0,0.34)] sm:mt-8 sm:w-auto sm:max-w-none"
             >
               Comecar Agora
             </Button>
 
-            <div className="mt-10 flex items-center gap-5 text-[1.55rem] text-white/82">
+            <div className="mt-8 flex items-center gap-4 text-[1.35rem] text-white/82 sm:mt-10 sm:gap-5 sm:text-[1.55rem]">
               <a href="https://www.behance.net/" target="_blank" rel="noreferrer" className="transition hover:text-white">
                 Be
               </a>
@@ -56,7 +56,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 gap-3 pb-1 text-sm text-white/68 md:grid-cols-3 md:items-end">
+        <div className="grid grid-cols-1 gap-2 pb-1 text-xs text-white/68 sm:gap-3 sm:text-sm md:grid-cols-3 md:items-end">
           <p className="text-center md:text-left">@rmagency.co</p>
           <p className="text-center">Design por Caio Ramos</p>
           <p className="text-center md:text-right">All rights reserved, ©2026</p>

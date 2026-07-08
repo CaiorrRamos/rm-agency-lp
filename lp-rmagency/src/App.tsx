@@ -1,5 +1,6 @@
 import { Footer } from './components/layout/Footer/Footer'
 import { Navbar } from './components/layout/Navbar/Navbar'
+import { VersionNotice } from './components/layout/VersionNotice/VersionNotice'
 import { AboutSection } from './components/sections/About/AboutSection'
 import { FAQSection } from './components/sections/FAQ/FAQSection'
 import { HeroSection } from './components/sections/Hero/HeroSection'
@@ -12,6 +13,7 @@ function App() {
   return (
     <div className="min-h-screen bg-black text-white">
       <Navbar />
+      <VersionNotice />
       <main>
         <HeroSection />
         <ShowcaseSection />

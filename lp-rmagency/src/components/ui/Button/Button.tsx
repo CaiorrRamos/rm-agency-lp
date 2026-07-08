@@ -4,7 +4,7 @@ import { cn } from '../../../lib/cn'
 import { buttonHover, buttonTap, springTransition } from '../../../utils/animations'
 
 const baseClassName =
-  'relative inline-flex items-center justify-center overflow-hidden rounded-full border px-6 py-3 text-sm font-medium tracking-[0.01em] text-white bg-[linear-gradient(135deg,rgba(255,255,255,0.12),rgba(255,255,255,0.04))] backdrop-blur-xl transition-all duration-300 ease-out before:pointer-events-none before:absolute before:inset-0 before:rounded-full before:bg-[radial-gradient(circle_at_30%_20%,rgba(255,255,255,0.25),transparent_60%)] before:opacity-60 after:pointer-events-none after:absolute after:inset-0 after:rounded-full after:bg-[linear-gradient(120deg,transparent,rgba(255,255,255,0.25),transparent)] after:opacity-0 after:transition-opacity after:duration-500 hover:after:opacity-100 focus:outline-none focus:ring-2 focus:ring-white/12'
+  'relative inline-flex min-h-11 items-center justify-center overflow-hidden rounded-full border px-5 py-2.5 text-center text-sm font-medium tracking-[0.01em] text-white bg-[linear-gradient(135deg,rgba(255,255,255,0.12),rgba(255,255,255,0.04))] backdrop-blur-xl transition-all duration-300 ease-out before:pointer-events-none before:absolute before:inset-0 before:rounded-full before:bg-[radial-gradient(circle_at_30%_20%,rgba(255,255,255,0.25),transparent_60%)] before:opacity-60 after:pointer-events-none after:absolute after:inset-0 after:rounded-full after:bg-[linear-gradient(120deg,transparent,rgba(255,255,255,0.25),transparent)] after:opacity-0 after:transition-opacity after:duration-500 hover:after:opacity-100 focus:outline-none focus:ring-2 focus:ring-white/12 sm:px-6 sm:py-3'
 
 const variantClassName = {
   primary:

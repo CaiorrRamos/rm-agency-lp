@@ -42,11 +42,11 @@ export function ShowcaseSection() {
   return (
     <motion.section
       id="showcase"
-      className="relative isolate overflow-hidden bg-black pt-[108px] pb-[112px] md:pt-[124px] md:pb-[140px]"
+      className="relative isolate overflow-hidden bg-black pt-[88px] pb-[88px] sm:pt-[96px] sm:pb-[96px] md:pt-[124px] md:pb-[140px]"
       initial="hidden"
       animate="show"
     >
-      <Container className="relative z-10 mx-auto w-full max-w-[1580px] px-4 sm:px-5 lg:px-6 xl:px-8">
+      <Container className="relative z-10 mx-auto w-full max-w-[1580px] px-3 sm:px-5 lg:px-6 xl:px-8">
         <ShowcaseChromaGrid
           className="mx-auto w-full max-w-[1520px]"
           radius={360}
@@ -54,7 +54,7 @@ export function ShowcaseSection() {
           fadeOut={0.5}
         >
           <motion.div
-            className="flex w-full flex-col gap-2 md:grid md:grid-cols-[0.94fr_1.14fr_0.94fr] md:items-start md:gap-2 lg:gap-2.5 xl:gap-3"
+            className="flex w-full flex-col gap-3 sm:gap-2 md:grid md:grid-cols-[0.94fr_1.14fr_0.94fr] md:items-start md:gap-2 lg:gap-2.5 xl:gap-3"
             variants={staggerContainer(0.08, 0.14)}
           >
             <motion.div
@@ -63,17 +63,17 @@ export function ShowcaseSection() {
             >
               <ShowcaseCard
                 item={leftTop}
-                className="md:min-h-[42svh] lg:min-h-[44svh] xl:min-h-[45svh]"
+                className="min-h-[240px] sm:min-h-[280px] md:min-h-[42svh] lg:min-h-[44svh] xl:min-h-[45svh]"
                 variants={cardDrop}
               />
               <ShowcaseCard
                 item={leftMid}
-                className="md:min-h-[42svh] lg:min-h-[44svh] xl:min-h-[45svh]"
+                className="min-h-[240px] sm:min-h-[280px] md:min-h-[42svh] lg:min-h-[44svh] xl:min-h-[45svh]"
                 variants={cardDrop}
               />
               <ShowcaseCard
                 item={leftBottom}
-                className="md:min-h-[42svh] lg:min-h-[44svh] xl:min-h-[45svh]"
+                className="min-h-[240px] sm:min-h-[280px] md:min-h-[42svh] lg:min-h-[44svh] xl:min-h-[45svh]"
                 variants={cardDrop}
               />
             </motion.div>
@@ -82,19 +82,19 @@ export function ShowcaseSection() {
               <ShowcaseCard
                 item={brandRm}
                 featured
-                className="md:min-h-[49svh] lg:min-h-[52svh] xl:min-h-[54svh]"
+                className="min-h-[280px] sm:min-h-[340px] md:min-h-[49svh] lg:min-h-[52svh] xl:min-h-[54svh]"
                 variants={featuredCardDrop}
               />
               <ShowcaseCard
                 item={featuredHat}
                 featured
-                className="md:min-h-[49svh] lg:min-h-[52svh] xl:min-h-[54svh]"
+                className="min-h-[280px] sm:min-h-[340px] md:min-h-[49svh] lg:min-h-[52svh] xl:min-h-[54svh]"
                 variants={featuredCardDrop}
               />
               <ShowcaseCard
                 item={featuredDidi}
                 featured
-                className="md:min-h-[49svh] lg:min-h-[52svh] xl:min-h-[54svh]"
+                className="min-h-[280px] sm:min-h-[340px] md:min-h-[49svh] lg:min-h-[52svh] xl:min-h-[54svh]"
                 variants={featuredCardDrop}
               />
             </motion.div>
@@ -105,17 +105,17 @@ export function ShowcaseSection() {
             >
               <ShowcaseCard
                 item={rightTop}
-                className="md:min-h-[42svh] lg:min-h-[44svh] xl:min-h-[45svh]"
+                className="min-h-[240px] sm:min-h-[280px] md:min-h-[42svh] lg:min-h-[44svh] xl:min-h-[45svh]"
                 variants={cardDrop}
               />
               <ShowcaseCard
                 item={rightMid}
-                className="md:min-h-[42svh] lg:min-h-[44svh] xl:min-h-[45svh]"
+                className="min-h-[240px] sm:min-h-[280px] md:min-h-[42svh] lg:min-h-[44svh] xl:min-h-[45svh]"
                 variants={cardDrop}
               />
               <ShowcaseCard
                 item={rightBottom}
-                className="md:min-h-[42svh] lg:min-h-[44svh] xl:min-h-[45svh]"
+                className="min-h-[240px] sm:min-h-[280px] md:min-h-[42svh] lg:min-h-[44svh] xl:min-h-[45svh]"
                 variants={cardDrop}
               />
             </motion.div>

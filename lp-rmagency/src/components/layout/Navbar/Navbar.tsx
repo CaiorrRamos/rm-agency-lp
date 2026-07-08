@@ -23,20 +23,20 @@ export function Navbar() {
     <header className="fixed inset-x-0 top-0 z-50">
       <Container
         className={cn(
-          'transition-all duration-300 px-6 pt-4 md:px-10 lg:px-16 xl:px-24',
+          'transition-all duration-300 px-4 pt-3 sm:px-6 md:px-10 md:pt-4 lg:px-16 xl:px-24',
           isScrolled ? 'translate-y-0' : 'pt-0',
         )}
       >
         <div
           className={cn(
-            'flex h-16 items-center justify-between gap-6 transition-all duration-300 md:h-20',
+            'flex h-14 items-center justify-between gap-3 transition-all duration-300 sm:h-16 sm:gap-4 md:h-20 md:gap-6',
             isScrolled
-              ? 'rounded-full border border-white/10 bg-[linear-gradient(to_bottom,rgba(0,0,0,0.4),rgba(0,0,0,0.1))] px-4 shadow-[0_10px_32px_rgba(0,0,0,0.24),inset_0_1px_0_rgba(255,255,255,0.12)] backdrop-blur-md md:px-6'
+              ? 'rounded-full border border-white/10 bg-[linear-gradient(to_bottom,rgba(0,0,0,0.4),rgba(0,0,0,0.1))] px-3 shadow-[0_10px_32px_rgba(0,0,0,0.24),inset_0_1px_0_rgba(255,255,255,0.12)] backdrop-blur-md sm:px-4 md:px-6'
               : 'bg-transparent px-0',
           )}
         >
           <a href="#hero" aria-label="Voltar para o topo" className="shrink-0">
-            <img src={logo} alt="RM Agency" className="h-8 w-auto" />
+            <img src={logo} alt="RM Agency" className="h-7 w-auto sm:h-8" />
           </a>
 
           <nav className="hidden lg:block" aria-label="Navegacao principal">
@@ -55,13 +55,14 @@ export function Navbar() {
             href="#footer"
             variant="secondary"
             className={cn(
-              'px-5 py-2.5 text-sm font-medium text-white',
+              'min-w-0 px-3 py-2 text-xs font-medium text-white sm:px-5 sm:py-2.5 sm:text-sm',
               isScrolled
                 ? 'border-white/16 bg-[linear-gradient(135deg,rgba(255,255,255,0.11),rgba(255,255,255,0.04))]'
                 : 'border-white/14 bg-[linear-gradient(135deg,rgba(255,255,255,0.08),rgba(255,255,255,0.03))]',
             )}
           >
-            Solicitar orcamento
+            <span className="hidden sm:inline">Solicitar orcamento</span>
+            <span className="sm:hidden">Orcamento</span>
           </Button>
         </div>
       </Container>
