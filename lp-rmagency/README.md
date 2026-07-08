@@ -1,4 +1,19 @@
-# React + TypeScript + Vite
+# RM Agency LP
+
+## Requisitos
+
+- Node.js `18.18.0` ou superior
+- npm compatível com a versão do Node instalada
+
+Se você usa `nvm`, rode `nvm use` dentro da pasta do projeto para carregar a versão definida em `.nvmrc`.
+
+## Scripts
+
+- `npm install`
+- `npm run dev`
+- `npm run build`
+
+## Base do projeto
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
