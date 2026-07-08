@@ -1,0 +1,22 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#050505"/>
+  <circle cx="233" cy="125" r="190" fill="#B2F828" fill-opacity="0.14"/>
+  <circle cx="1020" cy="548" r="220" fill="#FFFFFF" fill-opacity="0.05"/>
+  <rect x="72" y="72" width="1056" height="486" rx="32" fill="url(#panel)" stroke="rgba(255,255,255,0.12)"/>
+  <text x="112" y="188" fill="#B2F828" font-family="Arial, Helvetica, sans-serif" font-size="28" letter-spacing="4">RM AGENCY</text>
+  <text x="112" y="286" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="68" font-weight="700">
+    <tspan x="112" dy="0">Landing Pages Premium,</tspan>
+    <tspan x="112" dy="82">Branding e UI Design</tspan>
+  </text>
+  <text x="112" y="432" fill="#B7B7B7" font-family="Arial, Helvetica, sans-serif" font-size="30">
+    <tspan x="112" dy="0">Clareza estrategica, percepcao premium</tspan>
+    <tspan x="112" dy="42">e foco real em conversao.</tspan>
+  </text>
+  <text x="112" y="516" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="24">rmagency.co</text>
+  <defs>
+    <linearGradient id="panel" x1="600" y1="72" x2="600" y2="558" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#111111"/>
+      <stop offset="1" stop-color="#090909"/>
+    </linearGradient>
+  </defs>
+</svg>
