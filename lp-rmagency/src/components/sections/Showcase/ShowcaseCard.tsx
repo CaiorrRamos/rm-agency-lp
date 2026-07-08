@@ -3,7 +3,6 @@ import { imageHover, smoothTransition } from '../../../utils/animations'
 import type { ShowcaseItem } from '../../../types/content'
 import { cn } from '../../../lib/cn'
 import rmMark from '../../../assets/Logo RM - branco.svg'
-import { handleChromaCardMove } from './showcaseChroma'
 
 type ShowcaseCardProps = {
   item: ShowcaseItem
@@ -36,7 +35,6 @@ export function ShowcaseCard({
       )}
       style={style}
       variants={variants}
-      onMouseMove={handleChromaCardMove}
       whileHover={{
         y: -6,
         scale: 1.02,
@@ -46,13 +44,6 @@ export function ShowcaseCard({
       }}
       whileTap={{ scale: 0.99 }}
     >
-      <div
-        className="pointer-events-none absolute inset-0 z-20 opacity-0 transition-opacity duration-300 ease-out group-hover:opacity-100"
-        style={{
-          background:
-            'radial-gradient(circle at var(--mouse-x) var(--mouse-y), rgba(255,255,255,0.18), transparent 34%)',
-        }}
-      />
       <div className="absolute inset-0 overflow-hidden">
         {isBrandCard ? (
           <div className="flex h-full w-full items-center justify-center bg-[#151515]">

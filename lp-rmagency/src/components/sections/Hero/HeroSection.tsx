@@ -24,9 +24,9 @@ export function HeroSection() {
     >
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(178,248,40,0.18),transparent_25%),radial-gradient(circle_at_80%_30%,rgba(255,255,255,0.08),transparent_20%),linear-gradient(180deg,rgba(0,0,0,0.16),rgba(0,0,0,0.7))]" />
       <div className="pointer-events-none absolute inset-0 bg-black/40" />
-      <div className="pointer-events-none absolute inset-x-0 bottom-0 z-[1] h-[68vh] bg-gradient-to-b from-transparent via-black/70 to-black blur-2xl" />
-      <div className="pointer-events-none absolute inset-x-0 bottom-0 z-[1] h-[42vh] bg-gradient-to-b from-transparent via-black/85 to-black" />
-      <div className="pointer-events-none absolute inset-x-0 bottom-0 z-[1] h-[140px] bg-black" />
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 z-[1] h-[96vh] bg-gradient-to-b from-transparent via-black/76 via-[48%] to-black blur-2xl" />
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 z-[1] h-[74vh] bg-gradient-to-b from-transparent via-black/90 via-[38%] to-black" />
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 z-[1] h-[460px] bg-gradient-to-t from-black via-black/98 via-[70%] to-transparent" />
 
       <div className="pointer-events-none absolute inset-0 opacity-60 mix-blend-screen">
         <video
@@ -104,7 +104,7 @@ export function HeroSection() {
           <motion.div
             variants={fadeUp}
             transition={smoothTransition(0.6, 0.2)}
-            className="relative mt-16 w-full max-w-6xl overflow-hidden px-8 py-4 opacity-70 md:mt-20 md:px-12"
+            className="relative mt-24 w-full max-w-6xl overflow-hidden px-8 py-4 opacity-70 md:mt-32 md:px-12"
           >
             <LogoLoop
               logos={logos}
