@@ -1,0 +1,12 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "installCommand": "cd lp-rmagency && npm install",
+  "buildCommand": "cd lp-rmagency && npm run build",
+  "outputDirectory": "lp-rmagency/dist",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}

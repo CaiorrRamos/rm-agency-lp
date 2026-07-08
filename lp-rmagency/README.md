@@ -13,6 +13,16 @@ Se você usa `nvm`, rode `nvm use` dentro da pasta do projeto para carregar a ve
 - `npm run dev`
 - `npm run build`
 
+## Deploy na Vercel
+
+O repositório já está configurado para deploy a partir da raiz usando o arquivo `vercel.json`.
+
+- Install Command: `cd lp-rmagency && npm install`
+- Build Command: `cd lp-rmagency && npm run build`
+- Output Directory: `lp-rmagency/dist`
+
+Se você importar este repositório na Vercel, ela poderá publicar o projeto sem precisar mudar manualmente a pasta raiz.
+
 ## Base do projeto
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
