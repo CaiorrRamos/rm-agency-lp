@@ -61,8 +61,8 @@ export function Navbar() {
                 : 'border-white/14 bg-[linear-gradient(135deg,rgba(255,255,255,0.08),rgba(255,255,255,0.03))]',
             )}
           >
-            <span className="hidden sm:inline">Solicitar orcamento</span>
-            <span className="sm:hidden">Orcamento</span>
+            <span className="hidden sm:inline">Solicitar Orçamento</span>
+            <span className="sm:hidden">Orçamento</span>
           </Button>
         </div>
       </Container>

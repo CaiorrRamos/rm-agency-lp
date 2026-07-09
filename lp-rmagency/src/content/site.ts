@@ -28,19 +28,19 @@ export const budgetWhatsappLink =
 
 export const navItems: NavItem[] = [
   { label: 'Projetos', href: '#showcase' },
-  { label: 'Conheca a RM', href: '#about' },
-  { label: 'Processo', href: '#process' },
-  { label: 'Solucoes', href: '#solutions' },
+  { label: 'Sobre nós', href: '#about' },
+  { label: 'Processos', href: '#process' },
+  { label: 'Soluções', href: '#solutions' },
   { label: 'Reviews', href: '#testimonials' },
   { label: 'FAQ', href: '#faq' },
 ]
 
 export const heroContent: HeroContent & { media: string } = {
-  eyebrow: 'Construindo marcas que permanecem relevantes',
+  eyebrow: 'O posicionamente que sua marca precisa para crescer.',
   title: 'Construindo marcas que permanecem relevantes.',
   subtitle:
     'Landing pages premium, design de interface e estrategia visual para empresas que querem crescer com clareza e conversao.',
-  primaryCta: { label: 'Comecar projeto', href: '#cta' },
+  primaryCta: { label: 'Começar projeto', href: '#cta' },
   secondaryCta: { label: 'Ver projetos', href: '#showcase' },
   trustItems: ['Estrategia', 'Edicao visual', 'Digital', 'Motion'],
   media: heroVideo,
