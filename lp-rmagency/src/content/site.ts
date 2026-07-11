@@ -36,11 +36,11 @@ export const navItems: NavItem[] = [
 ]
 
 export const heroContent: HeroContent & { media: string } = {
-  eyebrow: 'Construindo marcas que permanecem relevantes',
+  eyebrow: 'O Posicionamento que sua marca precisa',
   title: 'Construindo marcas que permanecem relevantes.',
   subtitle:
     'Landing pages premium, design de interface e estrategia visual para empresas que querem crescer com clareza e conversao.',
-  primaryCta: { label: 'Comecar projeto', href: '#cta' },
+  primaryCta: { label: 'Comecar projeto', href: '#footer' },
   secondaryCta: { label: 'Ver projetos', href: '#showcase' },
   trustItems: ['Estrategia', 'Edicao visual', 'Digital', 'Motion'],
   media: heroVideo,
