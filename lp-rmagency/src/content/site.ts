@@ -28,9 +28,9 @@ export const budgetWhatsappLink =
 
 export const navItems: NavItem[] = [
   { label: 'Projetos', href: '#showcase' },
-  { label: 'Conheca a RM', href: '#about' },
+  { label: 'Conheça a RM', href: '#about' },
   { label: 'Processo', href: '#process' },
-  { label: 'Solucoes', href: '#solutions' },
+  { label: 'Soluções', href: '#solutions' },
   { label: 'Reviews', href: '#testimonials' },
   { label: 'FAQ', href: '#faq' },
 ]
@@ -39,8 +39,8 @@ export const heroContent: HeroContent & { media: string } = {
   eyebrow: 'O Posicionamento que sua marca precisa',
   title: 'Construindo marcas que permanecem relevantes.',
   subtitle:
-    'Landing pages, designs e estrategia visual para empresas que querem crescer com clareza e conversão.',
-  primaryCta: { label: 'Começar projeto', href: '#cta' },
+    'Landing pages, designs e estratégia visual para empresas que querem crescer com clareza e conversão.',
+  primaryCta: { label: 'Começar projeto', href: '#footer' },
   secondaryCta: { label: 'Ver projetos', href: '#showcase' },
   trustItems: ['Estratégia', 'Edição visual', 'Digital', 'Motion'],
   media: heroVideo,
@@ -78,7 +78,7 @@ export const showcaseItems: ShowcaseItem[] = [
   },
   {
     id: 'featured-hat',
-    title: 'Colecao Suzana Rio',
+    title: 'Coleção Suzana Rio',
     category: 'Visual campaign',
     status: 'live',
     href: '#cta',
@@ -116,13 +116,13 @@ export const showcaseItems: ShowcaseItem[] = [
 ]
 
 export const aboutContent = {
-  eyebrow: 'Conheca a RM',
-  title: 'Direcao criativa, interface e narrativa em uma operacao enxuta.',
+  eyebrow: 'Conheça a RM',
+  title: 'Direção criativa, interface e narrativa em uma operação enxuta.',
   description:
-    'A RM Agency combina design premium, estrategia de conversao e execucao rapida para transformar presenca digital em ativo de marca.',
+    'A RM Agency combina design premium, estratégia de conversão e execução rápida para transformar presença digital em ativo de marca.',
   capabilities: [
     'Design',
-    'Experiencia visual',
+    'Experiência visual',
     'UI Design',
     'Sistemas visuais',
     'Landing Page',
@@ -131,8 +131,8 @@ export const aboutContent = {
   ],
   stats: [
     { label: 'Projetos entregues', value: '180+' },
-    { label: 'Taxa de satisfacao', value: '96%' },
-    { label: 'Experiencia', value: '15+' },
+    { label: 'Taxa de satisfação', value: '96%' },
+    { label: 'Experiência', value: '15+' },
   ] satisfies AboutStat[],
   image: aboutImage,
   founders: [
@@ -156,63 +156,63 @@ export const aboutContent = {
 
 export const processContent: { eyebrow: string; title: string; description: string; image: string; steps: ProcessStep[] } = {
   eyebrow: 'Nosso Processo',
-  title: 'Uma estrutura clara para sair da ideia e chegar em uma pagina pronta para converter.',
+  title: 'Uma estrutura clara para sair da ideia e chegar em uma página pronta para converter.',
   description:
-    'Cada etapa existe para reduzir ruído, acelerar decisao e manter consistencia entre narrativa, interface e performance.',
+    'Cada etapa existe para reduzir ruído, acelerar decisão e manter consistência entre narrativa, interface e performance.',
   image: processImage,
   steps: [
     {
       id: 'discover',
       step: '01',
-      title: 'Descobrimos o seu negocio',
+      title: 'Descobrimos o seu negócio',
       description:
-        'Mapeamos posicionamento, publico, oferta e pontos de atrito para definir o angulo correto do projeto.',
+        'Mapeamos posicionamento, público, oferta e pontos de atrito para definir o ângulo correto do projeto.',
     },
     {
       id: 'plan',
       step: '02',
-      title: 'Planejamos a estrategia',
+      title: 'Planejamos a estratégia',
       description:
-        'Organizamos copy, hierarchy visual, CTA e referencias para construir uma direcao coerente.',
+        'Organizamos copy, hierarchy visual, CTA e referências para construir uma direção coerente.',
     },
     {
       id: 'design',
       step: '03',
       title: 'Design e desenvolvimento',
       description:
-        'Executamos o layout com refinamento visual, responsividade e foco em uma experiencia objetiva.',
+        'Executamos o layout com refinamento visual, responsividade e foco em uma experiência objetiva.',
     },
   ],
 }
 
 export const solutionsContent: { eyebrow: string; title: string; description: string; items: Solution[] } = {
-  eyebrow: 'Nossas Solucoes',
-  title: 'Servicos pensados para posicionamento, percepcao premium e conversao.',
+  eyebrow: 'Nossas Soluções',
+  title: 'Serviços pensados para posicionamento, percepção premium e conversão.',
   description:
-    'A estrutura permite vender desde branding ate landing pages de alta intencao sem fragmentar a narrativa da marca.',
+    'A estrutura permite vender desde branding até landing pages de alta intenção sem fragmentar a narrativa da marca.',
   items: [
     {
       id: 'branding',
-      title: 'Branding Estrategico',
-      description: 'Identidade visual e direcao criativa para marcas que precisam parecer maduras e memoraveis.',
+      title: 'Branding Estratégico',
+      description: 'Identidade visual e direção criativa para marcas que precisam parecer maduras e memoráveis.',
       tags: ['Brand', 'Positioning'],
     },
     {
       id: 'visual',
       title: 'Identidade Visual',
-      description: 'Sistemas visuais, assets e refinamento estetico para canais digitais e campanhas.',
+      description: 'Sistemas visuais, assets e refinamento estético para canais digitais e campanhas.',
       tags: ['Visual system', 'Art direction'],
     },
     {
       id: 'social',
       title: 'Social Media',
-      description: 'Pacotes editoriais com consistencia grafica e leitura rapida para reforco de marca.',
+      description: 'Pacotes editoriais com consistência gráfica e leitura rápida para reforço de marca.',
       tags: ['Content', 'Campaign'],
     },
     {
       id: 'landing',
       title: 'Websites e Landing Pages',
-      description: 'Paginas com foco em clareza, prova social e CTA estrategico para captacao.',
+      description: 'Páginas com foco em clareza, prova social e CTA estratégico para captação.',
       tags: ['UI/UX', 'Conversion'],
     },
   ],
@@ -220,16 +220,16 @@ export const solutionsContent: { eyebrow: string; title: string; description: st
 
 export const testimonialsContent: { eyebrow: string; title: string; description: string; items: Testimonial[]; metrics: AboutStat[] } = {
   eyebrow: 'Reviews de Clientes',
-  title: 'Credibilidade visual com relatos que reduzem friccao na decisao.',
+  title: 'Credibilidade visual com relatos que reduzem fricção na decisão.',
   description:
-    'Comentarios objetivos ajudam a sustentar preco, acelerar confianca e mostrar consistencia de entrega.',
+    'Comentários objetivos ajudam a sustentar preço, acelerar confiança e mostrar consistência de entrega.',
   items: [
     {
       id: 'ricardo',
       name: 'Ricardo Almeida',
       role: 'CEO, consultoria',
       quote:
-        'A nova apresentacao da marca ficou mais premium e a landing passou a conduzir melhor o usuario para contato.',
+        'A nova apresentação da marca ficou mais premium e a landing passou a conduzir melhor o usuário para contato.',
       avatar: reviewRicardo,
       rating: 5,
     },
@@ -238,7 +238,7 @@ export const testimonialsContent: { eyebrow: string; title: string; description:
       name: 'Juliana Costa',
       role: 'Fundadora, wellness brand',
       quote:
-        'O processo foi rapido, claro e muito mais estrategico do que um layout bonito isolado.',
+        'O processo foi rápido, claro e muito mais estratégico do que um layout bonito isolado.',
       avatar: reviewJuliana,
       rating: 5,
     },
@@ -247,7 +247,7 @@ export const testimonialsContent: { eyebrow: string; title: string; description:
       name: 'Matheus Oliveira',
       role: 'Diretor comercial',
       quote:
-        'A pagina ganhou linguagem mais sofisticada e uma hierarquia que valorizou melhor a oferta.',
+        'A página ganhou linguagem mais sofisticada e uma hierarquia que valorizou melhor a oferta.',
       avatar: reviewMatheus,
       rating: 5,
     },
@@ -264,32 +264,32 @@ export const faqItems: FAQItem[] = [
     id: 'timeline',
     question: 'Quanto tempo leva para desenvolver uma landing page?',
     answer:
-      'Depende do escopo, mas projetos bem definidos costumam andar entre uma e tres semanas com revisoes objetivas.',
+      'Depende do escopo, mas projetos bem definidos costumam andar entre uma e três semanas com revisões objetivas.',
   },
   {
     id: 'deliverables',
-    question: 'Vocês entregam so o design ou tambem a implementacao?',
+    question: 'Vocês entregam só o design ou também a implementação?',
     answer:
-      'A operacao pode incluir estrategia, layout e desenvolvimento, conforme a necessidade da pagina.',
+      'A operação pode incluir estratégia, layout e desenvolvimento, conforme a necessidade da página.',
   },
   {
     id: 'copy',
     question: 'Posso contratar mesmo sem copy pronta?',
     answer:
-      'Sim. A estrutura ja considera apoio na organizacao da mensagem e na hierarquia da oferta.',
+      'Sim. A estrutura já considera apoio na organização da mensagem e na hierarquia da oferta.',
   },
   {
     id: 'fit',
-    question: 'Esse servico serve para qual tipo de empresa?',
+    question: 'Esse serviço serve para qual tipo de empresa?',
     answer:
-      'Funciona melhor para marcas que valorizam percepcao premium, clareza comercial e experiencia visual.',
+      'Funciona melhor para marcas que valorizam percepção premium, clareza comercial e experiência visual.',
   },
 ]
 
 export const ctaContent: CTAContent = {
-  eyebrow: 'Pronto para comecar?',
-  title: 'O proximo passo da sua empresa pode comecar hoje.',
+  eyebrow: 'Pronto para começar?',
+  title: 'O próximo passo da sua empresa pode começar hoje.',
   subtitle:
-    'Se a marca precisa parecer mais solida e vender com mais clareza, a proxima conversa ja deve ser sobre execucao.',
-  primaryCta: { label: 'Solicitar orcamento', href: budgetWhatsappLink },
+    'Se a marca precisa parecer mais sólida e vender com mais clareza, a próxima conversa já deve ser sobre execução.',
+  primaryCta: { label: 'Solicitar orçamento', href: budgetWhatsappLink },
 }
