@@ -28,29 +28,21 @@ export const budgetWhatsappLink =
 
 export const navItems: NavItem[] = [
   { label: 'Projetos', href: '#showcase' },
-  { label: 'Sobre nós', href: '#about' },
-  { label: 'Processos', href: '#process' },
-  { label: 'Soluções', href: '#solutions' },
+  { label: 'Conheca a RM', href: '#about' },
+  { label: 'Processo', href: '#process' },
+  { label: 'Solucoes', href: '#solutions' },
   { label: 'Reviews', href: '#testimonials' },
   { label: 'FAQ', href: '#faq' },
 ]
 
 export const heroContent: HeroContent & { media: string } = {
-<<<<<<< HEAD
   eyebrow: 'O Posicionamento que sua marca precisa',
   title: 'Construindo marcas que permanecem relevantes.',
   subtitle:
-    'Landing pages premium, design de interface e estrategia visual para empresas que querem crescer com clareza e conversao.',
-  primaryCta: { label: 'Comecar projeto', href: '#footer' },
-=======
-  eyebrow: 'O posicionamente que sua marca precisa para crescer.',
-  title: 'Construindo marcas que permanecem relevantes.',
-  subtitle:
-    'Landing pages premium, design de interface e estrategia visual para empresas que querem crescer com clareza e conversao.',
+    'Landing pages, designs e estrategia visual para empresas que querem crescer com clareza e conversão.',
   primaryCta: { label: 'Começar projeto', href: '#cta' },
->>>>>>> ada4330b786f050ca0f3e20edb60da37a46b58f8
   secondaryCta: { label: 'Ver projetos', href: '#showcase' },
-  trustItems: ['Estrategia', 'Edicao visual', 'Digital', 'Motion'],
+  trustItems: ['Estratégia', 'Edição visual', 'Digital', 'Motion'],
   media: heroVideo,
 }
 
