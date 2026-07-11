@@ -39,7 +39,7 @@ export function Navbar() {
             <img src={logo} alt="RM Agency" className="h-7 w-auto sm:h-8" />
           </a>
 
-          <nav className="hidden lg:block" aria-label="Navegacao principal">
+          <nav className="hidden lg:block" aria-label="Navegação principal">
             <ul className="flex items-center gap-6 text-sm text-white/70 lg:gap-8">
               {navItems.map((item) => (
                 <li key={item.href}>

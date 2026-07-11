@@ -11,8 +11,8 @@ export function FAQSection() {
         <div>
           <SectionHeader
             eyebrow="FAQ"
-            title="Duvidas? Nos respondemos."
-            description="Essa secao deve tratar objecoes reais de prazo, escopo, copy, investimento e encaixe do servico."
+            title="Dúvidas? Nós respondemos."
+            description="Essa seção deve tratar objeções reais de prazo, escopo, copy, investimento e encaixe do serviço."
           />
         </div>
 

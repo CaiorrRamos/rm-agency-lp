@@ -1,4 +1,7 @@
 import { budgetWhatsappLink, ctaContent, heroContent } from '../../../content/site'
+import googleIcon from '../../../assets/google.svg'
+import instagramIcon from '../../../assets/instagram.svg'
+import whatsappIcon from '../../../assets/whatsapp.svg'
 import { Button } from '../../ui/Button/Button'
 import { Container } from '../../ui/Container/Container'
 
@@ -37,20 +40,38 @@ export function Footer() {
               href={budgetWhatsappLink}
               className="mt-7 w-full max-w-[280px] px-8 py-3.5 text-base text-white shadow-[inset_0_1px_0_rgba(255,255,255,0.24),0_0_0_1px_rgba(255,255,255,0.12),0_18px_42px_rgba(0,0,0,0.34)] sm:mt-8 sm:w-auto sm:max-w-none"
             >
-              Comecar Agora
+              Começar Projeto
             </Button>
 
-            <div className="mt-8 flex items-center gap-4 text-[1.35rem] text-white/82 sm:mt-10 sm:gap-5 sm:text-[1.55rem]">
-              <a href="https://www.behance.net/" target="_blank" rel="noreferrer" className="transition hover:text-white">
-                Be
+            <div className="mt-8 flex items-center gap-4 text-white/82 sm:mt-10 sm:gap-5">
+              <a
+                href="https://www.google.com/search?q=RM+Agency"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Google"
+                className="flex h-8 w-8 items-center justify-center transition hover:opacity-80"
+              >
+                <img src={googleIcon} alt="" className="h-5 w-5 object-contain" />
               </a>
               <span className="h-6 w-px bg-white/18" />
-              <a href="https://x.com/" target="_blank" rel="noreferrer" className="transition hover:text-white">
-                X
+              <a
+                href="https://www.instagram.com/rmagency.co/"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Instagram"
+                className="flex h-8 w-8 items-center justify-center transition hover:opacity-80"
+              >
+                <img src={instagramIcon} alt="" className="h-5 w-5 object-contain" />
               </a>
               <span className="h-6 w-px bg-white/18" />
-              <a href="https://dribbble.com/" target="_blank" rel="noreferrer" className="transition hover:text-white">
-                ◎
+              <a
+                href={budgetWhatsappLink}
+                target="_blank"
+                rel="noreferrer"
+                aria-label="WhatsApp"
+                className="flex h-8 w-8 items-center justify-center transition hover:opacity-80"
+              >
+                <img src={whatsappIcon} alt="" className="h-5 w-5 object-contain" />
               </a>
             </div>
           </div>

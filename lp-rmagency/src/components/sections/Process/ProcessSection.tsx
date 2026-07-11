@@ -15,7 +15,7 @@ export function ProcessSection() {
           <Card className="overflow-hidden p-0">
             <img
               src={processContent.image}
-              alt="Processo de criacao"
+              alt="Processo de criação"
               className="h-full min-h-[520px] w-full object-cover"
             />
           </Card>

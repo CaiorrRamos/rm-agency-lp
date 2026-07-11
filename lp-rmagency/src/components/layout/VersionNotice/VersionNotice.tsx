@@ -23,18 +23,18 @@ export function VersionNotice() {
           transition={smoothTransition(0.45)}
           className="fixed inset-x-4 bottom-4 z-[70] mx-auto w-auto max-w-[360px] rounded-3xl border border-white/10 bg-[linear-gradient(180deg,rgba(13,13,13,0.92),rgba(6,6,6,0.96))] p-4 text-left text-white shadow-[0_24px_80px_rgba(0,0,0,0.42),inset_0_1px_0_rgba(255,255,255,0.08)] backdrop-blur-xl sm:left-auto sm:right-5 sm:mx-0"
           aria-live="polite"
-          aria-label="Aviso de versao do site"
+          aria-label="Aviso de versão do site"
         >
           <div className="flex items-start justify-between gap-3">
             <div>
               <p className="text-xs font-medium uppercase tracking-[0.18em] text-[#b2f828]/82">
-                v1.0.0
+                v1.0.1
               </p>
               <p className="mt-2 text-sm font-medium text-white">
-                Este site ainda esta em sua primeira versao.
+                Este site ainda está em sua primeira versão.
               </p>
               <p className="mt-1 text-sm leading-6 text-white/62">
-                Algumas funcionalidades seguem em desenvolvimento e podem evoluir nas proximas atualizacoes.
+                Algumas funcionalidades seguem em desenvolvimento e podem evoluir nas próximas atualizações.
               </p>
             </div>
 
