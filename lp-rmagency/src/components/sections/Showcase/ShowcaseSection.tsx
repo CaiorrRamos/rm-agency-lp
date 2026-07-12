@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 import { showcaseItems } from '../../../content/site'
 import { Container } from '../../ui/Container/Container'
+import { Button } from '../../ui/Button/Button'
 import { smoothTransition, staggerContainer } from '../../../utils/animations'
 import { ShowcaseCard } from './ShowcaseCard'
 import { ShowcaseChromaGrid } from './ShowcaseChromaGrid'
@@ -121,6 +122,20 @@ export function ShowcaseSection() {
             </motion.div>
           </motion.div>
         </ShowcaseChromaGrid>
+
+        <motion.div
+          className="mt-10 flex justify-center sm:mt-12 md:mt-16"
+          variants={cardDrop}
+        >
+          <Button
+            href="#footer"
+            variant="secondary"
+            className="min-w-[168px] border-white/18 text-white"
+            aria-label="Ver mais projetos da RM Agency"
+          >
+            Ver mais
+          </Button>
+        </motion.div>
       </Container>
     </motion.section>
   )

@@ -1,5 +1,5 @@
 import { motion, type MotionStyle, type Variants } from 'framer-motion'
-import { imageHover, smoothTransition } from '../../../utils/animations'
+import { smoothTransition } from '../../../utils/animations'
 import type { ShowcaseItem } from '../../../types/content'
 import { cn } from '../../../lib/cn'
 import rmMark from '../../../assets/Logo RM - branco.svg'
@@ -26,11 +26,11 @@ export function ShowcaseCard({
     <motion.a
       href={item.href}
       className={cn(
-        'group relative block h-full min-h-[280px] overflow-hidden rounded-[10px] border border-white/[0.08] bg-[#5f5f5f] shadow-[0_22px_80px_rgba(0,0,0,0.28)] outline-none transition-[box-shadow,border-color] duration-500 ease-out will-change-transform focus-visible:ring-2 focus-visible:ring-white/20 md:rounded-[12px]',
+        'group relative block h-full min-h-[280px] overflow-hidden rounded-[10px] border border-white/[0.08] bg-[#070707] shadow-[0_22px_80px_rgba(0,0,0,0.28)] outline-none transition-[box-shadow,border-color] duration-500 ease-out will-change-transform focus-visible:ring-2 focus-visible:ring-white/20 md:rounded-[12px]',
         featured
           ? 'min-h-[360px] shadow-[0_32px_110px_rgba(0,0,0,0.42)]'
           : 'min-h-[260px]',
-        isBrandCard && 'bg-[#151515]',
+        (isBrandCard || item.logo) && 'bg-[#050505]',
         className,
       )}
       style={style}
@@ -56,10 +56,11 @@ export function ShowcaseCard({
         ) : item.image ? (
           <motion.img
             src={item.image}
-            alt={item.title}
-            className="h-full w-full object-cover saturate-[0.18] brightness-[0.92] transition-[filter,transform] duration-500 ease-out group-hover:saturate-100 group-hover:brightness-100"
-            initial={{ scale: 1 }}
-            whileHover={imageHover}
+            alt=""
+            aria-hidden="true"
+            className="h-full w-full object-cover opacity-0 saturate-[0.9] brightness-[0.86] transition-[opacity,filter] duration-700 ease-out group-hover:opacity-100 group-hover:saturate-100 group-hover:brightness-100 group-focus-visible:opacity-100"
+            initial={{ scale: 1.08 }}
+            whileHover={{ scale: 1.01, transition: smoothTransition(0.72) }}
           />
         ) : (
           <div className="flex h-full w-full items-center justify-center bg-[#626262]">
@@ -70,7 +71,17 @@ export function ShowcaseCard({
         )}
       </div>
 
-      <div className="absolute inset-0 bg-[linear-gradient(180deg,transparent_20%,rgba(0,0,0,0.08)_56%,rgba(0,0,0,0.36))] opacity-90 transition-opacity duration-500 ease-out group-hover:opacity-65" />
+      {item.logo ? (
+        <div className="absolute inset-0 z-10 flex items-center justify-center px-10">
+          <img
+            src={item.logo}
+            alt={item.title}
+            className="max-h-24 w-[min(68%,240px)] object-contain opacity-95 transition-[transform,opacity,filter] duration-500 ease-out group-hover:scale-95 group-hover:opacity-90 group-focus-visible:scale-95 md:max-h-28"
+          />
+        </div>
+      ) : null}
+
+      <div className="absolute inset-0 bg-[linear-gradient(180deg,transparent_20%,rgba(0,0,0,0.08)_56%,rgba(0,0,0,0.46))] opacity-90 transition-opacity duration-500 ease-out group-hover:opacity-72" />
       <div className="absolute inset-0 bg-white/[0.015] opacity-0 transition-opacity duration-500 ease-out group-hover:opacity-100" />
 
       <motion.span

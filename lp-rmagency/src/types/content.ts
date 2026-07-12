@@ -19,6 +19,7 @@ export type ShowcaseItem = {
   status: 'live' | 'coming-soon'
   href: string
   image?: string
+  logo?: string
 }
 
 export type AboutStat = {

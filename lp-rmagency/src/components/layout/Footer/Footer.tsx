@@ -37,7 +37,7 @@ export function Footer() {
             </h2>
 
             <Button
-              href={budgetWhatsappLink}
+              href="/contact"
               className="mt-7 w-full max-w-[280px] px-8 py-3.5 text-base text-white shadow-[inset_0_1px_0_rgba(255,255,255,0.24),0_0_0_1px_rgba(255,255,255,0.12),0_18px_42px_rgba(0,0,0,0.34)] sm:mt-8 sm:w-auto sm:max-w-none"
             >
               Começar Projeto

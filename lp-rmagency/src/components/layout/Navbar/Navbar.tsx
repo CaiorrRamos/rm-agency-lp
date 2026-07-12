@@ -7,6 +7,7 @@ import { Container } from '../../ui/Container/Container'
 
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false)
+  const isContactPage = window.location.pathname === '/contact'
 
   useEffect(() => {
     const handleScroll = () => {
@@ -35,7 +36,7 @@ export function Navbar() {
               : 'bg-transparent px-0',
           )}
         >
-          <a href="#hero" aria-label="Voltar para o topo" className="shrink-0">
+          <a href="/" aria-label="Voltar para o topo" className="shrink-0">
             <img src={logo} alt="RM Agency" className="h-7 w-auto sm:h-8" />
           </a>
 
@@ -43,7 +44,14 @@ export function Navbar() {
             <ul className="flex items-center gap-6 text-sm text-white/70 lg:gap-8">
               {navItems.map((item) => (
                 <li key={item.href}>
-                  <a className="transition hover:text-white" href={item.href}>
+                  <a
+                    className="transition hover:text-white"
+                    href={
+                      isContactPage && item.href.startsWith('#')
+                        ? `/${item.href}`
+                        : item.href
+                    }
+                  >
                     {item.label}
                   </a>
                 </li>
@@ -52,7 +60,7 @@ export function Navbar() {
           </nav>
 
           <Button
-            href="#footer"
+            href={isContactPage ? '/#footer' : '#footer'}
             variant="secondary"
             className={cn(
               'min-w-0 px-3 py-2 text-xs font-medium text-white sm:px-5 sm:py-2.5 sm:text-sm',

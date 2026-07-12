@@ -1,5 +1,9 @@
 import { motion } from 'framer-motion'
-import logo from '../../../assets/Logo.svg'
+import ascendLogo from '../../../assets/showcase/ascend-logo.svg'
+import cerealiLogo from '../../../assets/showcase/cereali-figata-logo.svg'
+import didiLogo from '../../../assets/showcase/didi-center-logo.svg'
+import kumoLogo from '../../../assets/showcase/kumo-logo.svg'
+import suzanaRioLogo from '../../../assets/showcase/suzanario-logo.svg'
 import { heroContent } from '../../../content/site'
 import { fadeIn, fadeUp, smoothTransition, staggerContainer } from '../../../utils/animations'
 import LogoLoop, { type LogoItem } from '../../shared/LogoLoop'
@@ -8,13 +12,43 @@ import { Button } from '../../ui/Button/Button'
 import { Container } from '../../ui/Container/Container'
 import { Section } from '../../ui/Section/Section'
 
-const logos: LogoItem[] = Array.from({ length: 8 }, (_, index) => ({
-  src: logo,
-  alt: `RM Agency ${index + 1}`,
-  title: 'RM Agency',
-  width: 124,
-  height: 28,
-}))
+const logos: LogoItem[] = [
+  {
+    src: suzanaRioLogo,
+    alt: 'Suzana Rio',
+    title: 'Suzana Rio',
+    width: 124,
+    height: 34,
+  },
+  {
+    src: kumoLogo,
+    alt: 'Kumo',
+    title: 'Kumo',
+    width: 124,
+    height: 34,
+  },
+  {
+    src: didiLogo,
+    alt: 'DIDI Center',
+    title: 'DIDI Center',
+    width: 124,
+    height: 34,
+  },
+  {
+    src: cerealiLogo,
+    alt: 'Cereali Figata',
+    title: 'Cereali Figata',
+    width: 124,
+    height: 34,
+  },
+  {
+    src: ascendLogo,
+    alt: 'Ascend',
+    title: 'Ascend',
+    width: 124,
+    height: 34,
+  },
+]
 
 export function HeroSection() {
   return (
@@ -111,7 +145,7 @@ export function HeroSection() {
               speed={40}
               direction="left"
               logoHeight={34}
-              gap={36}
+              gap={128}
               pauseOnHover
               fadeOut
               fadeOutColor="#000000"

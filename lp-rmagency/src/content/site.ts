@@ -1,9 +1,16 @@
 import aboutImage from '../assets/logo-rm-wh-green.png'
 import heroVideo from '../assets/bg-video.mp4'
 import processImage from '../assets/Background-process.png'
-import showcaseBrand from '../assets/em breve-case.png'
-import showcaseDidi from '../assets/mockup-didi.png'
-import showcaseHat from '../assets/mockup-suzana-rio.png'
+import showcaseAscendBg from '../assets/showcase/ascend-bg.webp'
+import showcaseAscendLogo from '../assets/showcase/ascend-logo.svg'
+import showcaseCerealiBg from '../assets/showcase/cereali-figata-bg.webp'
+import showcaseCerealiLogo from '../assets/showcase/cereali-figata-logo.svg'
+import showcaseDidiBg from '../assets/showcase/didi-center-bg.webp'
+import showcaseDidiLogo from '../assets/showcase/didi-center-logo.svg'
+import showcaseKumoBg from '../assets/showcase/kumo-bg.webp'
+import showcaseKumoLogo from '../assets/showcase/kumo-logo.svg'
+import showcaseSuzanaBg from '../assets/showcase/suzana-rio-bg.webp'
+import showcaseSuzanaLogo from '../assets/showcase/suzanario-logo.svg'
 import avatarCaio from '../assets/imagem-caio.png'
 import avatarJohn from '../assets/imagem-john.png'
 import avatarJuan from '../assets/imagem-juan.png'
@@ -33,6 +40,7 @@ export const navItems: NavItem[] = [
   { label: 'Soluções', href: '#solutions' },
   { label: 'Reviews', href: '#testimonials' },
   { label: 'FAQ', href: '#faq' },
+  { label: 'Contato', href: '/contact' },
 ]
 
 export const heroContent: HeroContent & { media: string } = {
@@ -40,7 +48,7 @@ export const heroContent: HeroContent & { media: string } = {
   title: 'Construindo marcas que permanecem relevantes.',
   subtitle:
     'Landing pages, designs e estratégia visual para empresas que querem crescer com clareza e conversão.',
-  primaryCta: { label: 'Começar projeto', href: '#footer' },
+  primaryCta: { label: 'Começar projeto', href: '/contact' },
   secondaryCta: { label: 'Ver projetos', href: '#showcase' },
   trustItems: ['Estratégia', 'Edição visual', 'Digital', 'Motion'],
   media: heroVideo,
@@ -48,26 +56,31 @@ export const heroContent: HeroContent & { media: string } = {
 
 export const showcaseItems: ShowcaseItem[] = [
   {
-    id: 'coming-1',
-    title: 'Em breve',
-    category: 'Webflow LP',
-    status: 'coming-soon',
-    href: '#cta',
-  },
-  {
-    id: 'brand-rm',
-    title: 'RM Agency Brand System',
-    category: 'Brand system',
+    id: 'suzana-rio',
+    title: 'Suzana Rio',
+    category: 'Identidade visual',
     status: 'live',
     href: '#cta',
-    image: showcaseBrand,
+    image: showcaseSuzanaBg,
+    logo: showcaseSuzanaLogo,
   },
   {
-    id: 'coming-2',
-    title: 'Em breve',
-    category: 'Webflow LP',
-    status: 'coming-soon',
+    id: 'kumo',
+    title: 'Kumo',
+    category: 'Brand design',
+    status: 'live',
     href: '#cta',
+    image: showcaseKumoBg,
+    logo: showcaseKumoLogo,
+  },
+  {
+    id: 'didi-center',
+    title: 'DIDI Center',
+    category: 'Direção criativa',
+    status: 'live',
+    href: '#cta',
+    image: showcaseDidiBg,
+    logo: showcaseDidiLogo,
   },
   {
     id: 'coming-3',
@@ -77,12 +90,13 @@ export const showcaseItems: ShowcaseItem[] = [
     href: '#cta',
   },
   {
-    id: 'featured-hat',
-    title: 'Coleção Suzana Rio',
-    category: 'Visual campaign',
+    id: 'cereali-figata',
+    title: 'Cereali Figata',
+    category: 'Brand identity',
     status: 'live',
     href: '#cta',
-    image: showcaseHat,
+    image: showcaseCerealiBg,
+    logo: showcaseCerealiLogo,
   },
   {
     id: 'coming-4',
@@ -99,12 +113,13 @@ export const showcaseItems: ShowcaseItem[] = [
     href: '#cta',
   },
   {
-    id: 'featured-didi',
-    title: 'DIDI launch assets',
-    category: 'Launch page',
+    id: 'ascend',
+    title: 'Ascend',
+    category: 'Performance brand',
     status: 'live',
     href: '#cta',
-    image: showcaseDidi,
+    image: showcaseAscendBg,
+    logo: showcaseAscendLogo,
   },
   {
     id: 'coming-6',
