@@ -8,10 +8,11 @@ import { ProcessSection } from './components/sections/Process/ProcessSection'
 import { ShowcaseSection } from './components/sections/Showcase/ShowcaseSection'
 import { SolutionsSection } from './components/sections/Solutions/SolutionsSection'
 import { TestimonialsSection } from './components/sections/Testimonials/TestimonialsSection'
+import { normalizePathname } from './lib/path'
 import { ContactPage } from './pages/Contact/ContactPage'
 
 function App() {
-  const isContactPage = window.location.pathname === '/contact'
+  const isContactPage = normalizePathname(window.location.pathname) === '/contact'
 
   return (
     <div className="min-h-screen bg-black text-white">

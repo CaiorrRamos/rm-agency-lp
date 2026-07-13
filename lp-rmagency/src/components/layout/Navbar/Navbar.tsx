@@ -2,12 +2,13 @@ import { useEffect, useState } from 'react'
 import logo from '../../../assets/Logo.svg'
 import { navItems } from '../../../content/site'
 import { cn } from '../../../lib/cn'
+import { normalizePathname } from '../../../lib/path'
 import { Button } from '../../ui/Button/Button'
 import { Container } from '../../ui/Container/Container'
 
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false)
-  const isContactPage = window.location.pathname === '/contact'
+  const isContactPage = normalizePathname(window.location.pathname) === '/contact'
 
   useEffect(() => {
     const handleScroll = () => {
