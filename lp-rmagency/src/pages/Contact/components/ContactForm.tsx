@@ -19,6 +19,12 @@ const emailJsConfig = {
 
 type SubmissionState = 'idle' | 'submitting' | 'success' | 'error'
 
+function getFormValue(formData: FormData, fieldName: string) {
+  const value = formData.get(fieldName)
+
+  return typeof value === 'string' ? value.trim() : ''
+}
+
 export function ContactForm() {
   const [submissionState, setSubmissionState] = useState<SubmissionState>('idle')
   const [feedback, setFeedback] = useState('')
@@ -39,6 +45,11 @@ export function ContactForm() {
     }
 
     const formData = new FormData(form)
+    const name = getFormValue(formData, 'name')
+    const email = getFormValue(formData, 'email')
+    const subject = getFormValue(formData, 'subject')
+    const message = getFormValue(formData, 'message')
+
     setSubmissionState('submitting')
     setFeedback('')
 
@@ -51,11 +62,16 @@ export function ContactForm() {
           template_id: emailJsConfig.templateId,
           user_id: emailJsConfig.publicKey,
           template_params: {
-            from_name: formData.get('name'),
-            from_email: formData.get('email'),
-            reply_to: formData.get('email'),
-            subject: formData.get('subject'),
-            message: formData.get('message'),
+            name,
+            email,
+            user_name: name,
+            user_email: email,
+            from_name: name,
+            from_email: email,
+            reply_to: email,
+            subject,
+            title: subject,
+            message,
           },
         }),
       })
