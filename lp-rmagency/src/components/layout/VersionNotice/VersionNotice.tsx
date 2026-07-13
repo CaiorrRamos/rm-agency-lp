@@ -24,13 +24,13 @@ export function VersionNotice() {
           <div className="flex items-start justify-between gap-3">
             <div>
               <p className="text-xs font-medium uppercase tracking-[0.18em] text-[#b2f828]/82">
-                v1.1.0
+                v1.2.0
               </p>
               <p className="mt-2 text-sm font-medium text-white">
-                Este site ainda está em sua primeira versão.
+                Nova atualização do nosso site!.
               </p>
               <p className="mt-1 text-sm leading-6 text-white/62">
-                Algumas funcionalidades seguem em desenvolvimento e podem evoluir nas próximas atualizações.
+                A página de contato foi atualizada! Agora você já pode enviar mensagens diretamente para a nossa equipe! Aproveite entre em contato conosco para discutir seus projetos e ideias!
               </p>
             </div>
 
